@@ -27,8 +27,9 @@ PRODUCT_COPY_FILES += \
 
 # RIL
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.telephony.ril_class=HuaweiMSimRIL \
-    persist.radio.multisim.config=dsda
+	ro.telephony.ril_class=HuaweiRIL
+    #ro.telephony.ril_class=HuaweiMSimRIL \
+    #persist.radio.multisim.config=dsda
 
 # Include non-opensource parts
 $(call inherit-product, vendor/huawei/h60_l02/h60_l02-vendor.mk)
